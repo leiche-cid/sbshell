@@ -95,10 +95,7 @@ EOF
         fi
     done
 else
-    if [ ! -f "$MANUAL_FILE" ]; then
-        echo -e "${RED}订阅地址为空，请设置！${NC}"
-        exit 1
-    fi
+
 
     # 使用现有配置，并输出调试信息
     BACKEND_URL=$(grep BACKEND_URL "$MANUAL_FILE" 2>/dev/null | cut -d'=' -f2-)
