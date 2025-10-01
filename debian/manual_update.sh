@@ -117,7 +117,7 @@ else
 fi
 
 # 构建完整的配置文件URL
-FULL_URL="${BACKEND_URL}/config/${SUBSCRIPTION_URL}&file=${TEMPLATE_URL}"
+FULL_URL="${TEMPLATE_URL}"
 echo "生成完整订阅链接: $FULL_URL"
 
 # 备份现有配置文件
